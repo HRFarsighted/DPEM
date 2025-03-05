@@ -27,7 +27,7 @@ bash ./scripts/multivariate_forecasting/Exchange/exchange_96.sh
 
 ## Acknowledgement:
 
-We are grateful for the following awesome projects when implementing S-Mamba:
+We are grateful for the following awesome projects when implementing DPEM:
 
 - [iTransformer](https://github.com/thuml/iTransformer)
 - [Mamba](https://github.com/state-spaces/mamba)

@@ -11,12 +11,12 @@ if __name__ == '__main__':
     torch.manual_seed(fix_seed)
     np.random.seed(fix_seed)
 
-    parser = argparse.ArgumentParser(description='iTransformer')
+    parser = argparse.ArgumentParser(description='DPEM')
 
     # basic config
     parser.add_argument('--is_training', type=int, required=True, default=1, help='status')
     parser.add_argument('--model_id', type=str, required=True, default='test', help='model id')
-    parser.add_argument('--model', type=str, required=True, default='S_Mamba',
+    parser.add_argument('--model', type=str, required=True, default='DPEM',
                         help='model name, options: [iTransformer, iInformer, iReformer, iFlowformer, iFlashformer,S_Mamba ]')
 
     # data loader
@@ -88,7 +88,6 @@ if __name__ == '__main__':
                                                                            'you can select [partial_start_index, min(enc_in + partial_start_index, N)]')
     parser.add_argument('--d_state', type=int, default=32, help='parameter of Mamba Block')
 
-    #add 新增参数
     parser.add_argument('--Times_for_experiment', type=int, default=1, help='Times_for_experiment')
     parser.add_argument('--top_k', type=int, default=3, help='top_k for fft')
     

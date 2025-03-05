@@ -15,7 +15,7 @@ class Dataset_ETT_hour(Dataset):
                  features='S', data_path='ETTh1.csv',
                  target='OT', scale=True, timeenc=0, freq='h'):
         # size [seq_len, label_len, pred_len]
-        # info  size: 定义输入序列长度 (seq_len)、标签长度 (label_len)、预测长度 (pred_len)。如果未提供，默认使用 24 * 4 * 4（即一天4个小时，16天的序列长度）
+        # info  size: 
         if size == None:
             self.seq_len = 24 * 4 * 4
             self.label_len = 24 * 4
@@ -74,9 +74,9 @@ class Dataset_ETT_hour(Dataset):
             data_stamp = time_features(pd.to_datetime(df_stamp['date'].values), freq=self.freq)
             data_stamp = data_stamp.transpose(1, 0)  
 
-        self.data_x = data[border1:border2] #将处理好的特征数据存储在 self.data_x 和 self.data_y 中，用于后续模型的输入和标签。
-        self.data_y = data[border1:border2] #
-        self.data_stamp = data_stamp  #时间戳特征存储在 self.data_stamp 中，用于与数据配对。
+        self.data_x = data[border1:border2] 
+        self.data_y = data[border1:border2] 
+        self.data_stamp = data_stamp 
 
     def __getitem__(self, index):
         s_begin = index
@@ -90,8 +90,8 @@ class Dataset_ETT_hour(Dataset):
         seq_y_mark = self.data_stamp[r_begin:r_end]
 
         return seq_x, seq_y, seq_x_mark, seq_y_mark   
-        # s_begin, s_end: 定义输入序列的起始和结束位置。r_begin, r_end: 定义预测序列的起始和结束位置。从 self.data_x 中切片得到输入序列 seq_x，从 self.data_y 中切片得到预测序列 seq_y。
-        # seq_x_mark 和 seq_y_mark 分别是对应时间戳的标记信息（如果有时间编码的话）。
+        # s_begin, s_end: 
+      
 
     def __len__(self):
         return len(self.data_x) - self.seq_len - self.pred_len + 1

@@ -13,15 +13,20 @@
 ```bash
 pip install -r requirements.txt
 ```
+
+```
 scikit-learn==1.3.0
 
 numpy==1.26.4
 
 matplotlib==3.7.0
-torch==2.0.1
-reformer-pytorch==1.4.4
-mamba-ssm==1.2.0
 
+torch==2.0.1
+
+reformer-pytorch==1.4.4
+
+mamba-ssm==1.2.0
+```
 ### Datasets
 Detailed dataset descriptions. $Dim$ denotes the variate number of each dataset. $Dataset$ $Size$ denotes the total number of time points in (Train, Validation, Test) split respectively. $Prediction$ $Length$ denotes the future time points to be predicted. $Frequency$ denotes the sampling interval of time points.
 ![image](https://github.com/user-attachments/assets/d4134d1b-d261-43f2-8fba-782bc4de4a4e)

@@ -1,4 +1,5 @@
 # DPEM:Dual-Perspective Enhanced Mamba for Multivariate Time Series Forecasting
+![模型图](https://github.com/user-attachments/assets/4ea7d8f0-306e-4cbd-8241-de278e360a08)
 
 
 ## Contributions:

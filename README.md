@@ -37,7 +37,8 @@ Detailed dataset descriptions. $Dim$ denotes the variate number of each dataset.
 # Example: Exchange
 bash ./scripts/multivariate_forecasting/Exchange/exchange_96.sh
 ```
-
+## Main results:
+![image](https://github.com/user-attachments/assets/db34dc6e-6252-4045-99e0-2bc8130a2274)
 
 ## Acknowledgement:
 

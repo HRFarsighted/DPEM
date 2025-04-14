@@ -13,7 +13,7 @@
 ```bash
 pip install -r requirements.txt
 ```
---scikit-learn==1.3.0
+\item{scikit-learn==1.3.0}
 --numpy==1.26.4
 --matplotlib==3.7.0
 --torch==2.0.1

@@ -15,13 +15,13 @@ pip install -r requirements.txt
 ```
 ### Datasets
 Detailed dataset descriptions. $Dim$ denotes the variate number of each dataset. $Dataset$ $Size$ denotes the total number of time points in (Train, Validation, Test) split respectively. $Prediction$ $Length$ denotes the future time points to be predicted. $Frequency$ denotes the sampling interval of time points.
+![image](https://github.com/user-attachments/assets/d4134d1b-d261-43f2-8fba-782bc4de4a4e)
 
 ### Train and evaluate
 
 ```bash
 # Example: Exchange
 bash ./scripts/multivariate_forecasting/Exchange/exchange_96.sh
-
 ```
 
 

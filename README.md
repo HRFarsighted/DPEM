@@ -1,8 +1,6 @@
 # DPEM:Dual-Perspective Enhanced Mamba for Multivariate Time Series Forecasting
-## Model Architecture
+## DPEM Model Architecture
 ![模型图](https://github.com/user-attachments/assets/4ea7d8f0-306e-4cbd-8241-de278e360a08)
-
-
 ## Contributions:
 
 -- A Dual-Perspective Enhanced Mamba DPEM framework is introduced for effective multivariate time series forecasting.
@@ -16,7 +14,7 @@
 pip install -r requirements.txt
 ```
 ### Datasets
-
+Detailed dataset descriptions. $Dim$ denotes the variate number of each dataset. $Dataset$ $Size$ denotes the total number of time points in (Train, Validation, Test) split respectively. $Prediction$ $Length$ denotes the future time points to be predicted. $Frequency$ denotes the sampling interval of time points.
 
 ### Train and evaluate
 

@@ -50,4 +50,11 @@ We are grateful for the following awesome projects when implementing DPEM:
 - [Time-Series-Library] (https://github.com/thuml/Time-Series-Library)
 
 ## Citation  
-
+@article{hou2025dpem,
+  title={DPEM: Dual-Perspective Enhanced Mamba for multivariate time series forecasting},
+  author={Hou, Rui and Liu, Qiao and He, Peng and Liu, Yao and Huang, Yanwen and Xie, Jun and Xie, Yang and Dai, Tingting},
+  journal={Information Fusion},
+  pages={103250},
+  year={2025},
+  publisher={Elsevier}
+}
